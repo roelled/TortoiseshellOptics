@@ -36,6 +36,10 @@ header{
   align-items: center;
 }
 
+#smallMenu{
+  display: none;
+}
+
 nav a{
   color: White;
   text-decoration: none;
@@ -72,6 +76,91 @@ nav li{
   font-weight: bold;
 }
 
+/* Main Body Content */
+
+.main{
+  display: flex;
+  justify-content: center;
+}
+
+/* Infobox */
+
+.infoBox{
+  display: flex;
+  justify-content: space-between;
+  width: 27rem;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.img1{
+width: 3.5rem;
+}
+
+.img2{
+  width: 5rem;
+}
+
+/* Main Content */
+
+.mainContainer{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.mainContent{
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.mainColumn{
+  width: 47.5%;
+  text-align: left;
+}
+
+.mainColumn h3{
+  width: 10rem;
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  color: White;
+  background-color: Cadetblue;
+}
+
+/* Footer Content */
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+.footerContent{
+  display: flex;
+  align-items: center;
+  width: 960px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 4rem;
+  background-color: azure;
+}
+
+footer img{
+  margin-right: 1rem;
+  height: 1.5rem;
+}
 
 /* Tags Collectioin */
 
@@ -82,4 +171,121 @@ html{
 
 body{
   font-family: Bitter;
+}
+
+/* Media Querries */
+
+@media only screen and (max-width: 960px) {
+
+.navBarTop{
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 5rem;
+}
+
+.textBox{
+  padding: 0;
+  margin-right: 2rem;
+}
+
+.textBox span{
+  font-size: 1.33rem;
+  padding: 0.75rem 4rem;
+}
+
+header{
+  height: 22rem;
+}
+
+.footerContent{
+  width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 700px) {
+
+#bigMenu{
+  display: none;
+}
+
+#smallMenu{
+  display: inline;
+}
+
+header{
+  height: 17rem;
+  margin-bottom: 3.77rem;
+  background-position: 20%;
+}
+
+.navBarTop{
+  margin-bottom: 9rem;
+}
+
+.textBox{
+  justify-content: center;
+  background-color: White;
+  margin-right: 0;
+}
+
+.textBox span{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.infoBox{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.box{
+  font-size: 0.77rem;
+  margin-top: 1.54rem;
+  margin-bottom: 0;
+  height: auto;
+  line-height: 1rem;
+}
+
+.box img{
+  margin-bottom: 1rem;
+}
+
+.mainContainer{
+  margin-top: 3.77rem;
+  margin-bottom: 0;
+}
+
+.mainContent{
+  flex-direction: column;
+  width: 100%;
+}
+
+.mainColumn{
+  width: 100%;
+}
+
+.mainColumn h3{
+  width: 100%;
+}
+
+.mainColumn p{
+  margin-bottom: 4rem;
+  font-size: 0.77rem;
+  line-height: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.footerContent{
+  justify-content: center;
+  padding-left: 0;
+}
+
+footer img{
+  margin: 0;
+}
+
 }
