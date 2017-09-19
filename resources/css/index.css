@@ -1,0 +1,85 @@
+/* Header Section */
+
+/* Navigation Bar + Logo */
+header{
+  height: 31rem;
+  background-image: url(./../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.topContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.navBarTop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+  width: 960px;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+  color: White;
+}
+
+.navBarTop img{
+  height: 1.5rem;
+  margin: 1rem 1rem 1rem 2rem;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+nav a{
+  color: White;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: Black;
+}
+
+nav li{
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+/* TextBox in Header */
+
+.topMiddleContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.textBox{
+  display: flex;
+  justify-content: flex-end;
+  width: 1032px;
+  line-height: 1.2;
+}
+
+.textBox span{
+  padding: 1.5rem 5rem;
+  background-color: White;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+/* Tags Collectioin */
+
+html{
+  font-size: 18px;
+  text-align: center;
+}
+
+body{
+  font-family: Bitter;
+}
